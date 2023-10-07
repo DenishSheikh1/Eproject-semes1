@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/sweetalert.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- header -->
+  <header></header>
+  <!-- header -->
+
+  <!-- banner -->
+  <div class="banner">
+    <h1 class="title">FEEDBACK</h1>
+  </div>
+  <!-- banner -->
+
+  <div class="container py-5 my-5 feedbackContainer">
+    <div class="row align-items-center">
+      <h2 class="text-center "> <b> Feedback</b></h2>
+      <form class="mt-5" method="post" action="" id="feedbackForm">
+        <div class="mb-3">
+          <input type="text" class="form-control nameInput" placeholder="Name Here..." maxlength="30"
+            onkeyup="nameValidation()" required>
+          <div class="error nameErr">
+            Name Is Required!!!
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control emailInput" placeholder="Email Address Here..." maxlength="40"
+            onkeyup="emailValidation()" require>
+          <div class="error emailErr">
+            Email Address Is Required!!!
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="number" class="form-control contactInput" placeholder="Contact No Here..." maxlength="15"
+            onkeyup="contactValidation()" required>
+          <div class="error contactErr">
+            Contact No Is Required!!!
+          </div>
+        </div>
+        <textarea rows="4" class="w-100 form-control-lg messageInput" placeholder="Review Here..." maxlength="1000"
+          onkeyup="messageValidation()" required style="resize: none; outline: none;"></textarea>
+        <div class="error messageErr">
+          Message Is Required!!!
+        </div>
+    </div>
+    <br>
+    <div class="rate">
+      <span> <b> Give Us Rating </b> </span><br>
+      <input type="radio" id="star5" name="rate" value="5" />
+      <label for="star5" title="text">5 stars</label>
+      <input type="radio" id="star4" name="rate" value="4" />
+      <label for="star4" title="text">4 stars</label>
+      <input type="radio" id="star3" name="rate" value="3" />
+      <label for="star3" title="text">3 stars</label>
+      <input type="radio" id="star2" name="rate" value="2" />
+      <label for="star2" title="text">2 stars</label>
+      <input type="radio" id="star1" name="rate" value="1" />
+      <label for="star1" title="text">1 star</label>
+    </div>
+    <br>
+    <br>
+    <br>
+    <button type="button" id="submitBtn" class="btn btn-dark" onclick="validation()">Submit
+      Now</button>
+
+
+    </form>
+  </div>
+  </div>
+  </div>
+  <!-- footer -->
+  <footer></footer>
+  <!-- footer -->
+
+</body>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.slider.js"></script>
+<script src="js/header.js"></script>
+<script src="js/script.footer.js"></script>
+<script src="js/script.counter.js"></script>
+<script src="js/script.topHeader.js"></script>
+<script src="js/sweetalert2.min.js"></script>
+<script src="js/script.feedback.validation.js"></script>
+
+</html>
